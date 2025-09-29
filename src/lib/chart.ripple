@@ -2,8 +2,8 @@ import { Chart as ChartJS } from 'chart.js';
 import type { ChartType, DefaultDataPoint } from 'chart.js';
 import type { ChartProps } from './types';
 import { effect, track, untrack } from 'ripple';
-import { cloneData } from './utils';
-import { setOptions, setDatasets, setLabels } from './utils';
+import { cloneData } from './utils.ts';
+import { setOptions, setDatasets, setLabels } from './utils.ts';
 
 function watch(deps: Array<any>, cb: () => void) {
 	let first = true;
